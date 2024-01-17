@@ -1,9 +1,9 @@
-// Display Value
+// Display Value and Event Keys
 function dis(val) {
-  document.getElementById('result').value
+  document.getElementById('result').value += val
 }
 
-// Event Keys
+
 function myFunction(event) {
   if(event.key == '0' || event.key == '1'
       || event.key == '2' || event.key == '3' 
@@ -14,3 +14,28 @@ function myFunction(event) {
       || event.key == '*'|| event.key == '/');
       document.getElementById('result').value += event.key
 }
+
+const cal = document.getElementById('calculator');
+cal.onkeyup = function (event) { 
+  if(event.keycode === 13) {
+    console.log("Enter");
+    let x = document.getElementById('result').value
+    console.log(x);
+    solve();
+  }
+}
+
+// Evaluate The Digit and Return Result
+function solve(){
+  let x = document.getElementById('result').value
+  let y = math.evaluate(x);
+  document.getElementById('result').value = y;
+}
+
+// Clear Display
+function clr(){
+  document.getElementById('result').value = "";
+}
+
+
+

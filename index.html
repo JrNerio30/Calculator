@@ -21,14 +21,17 @@
         crossorigin="anonymous"
         referrerpolicy="no-referrer">
       </script> 
+      <link rel="stylesheet" href="style.css">
   </head>
   <body>
+  <main id="the_calculator">
     <table id="calculator">
       <tr>
         <td colspan="3"><input type="text" id="result"></td>
-        <td> <input type="text" value="c" onclick="clr()" /></td>
+        <td><input type="button" value="ce"  onclick="clr()" /></td>
       </tr>
       <script src="calcu.js" async defer></script>
     </table>
+  </main>
   </body>
 </html>
