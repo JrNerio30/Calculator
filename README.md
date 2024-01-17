@@ -12,7 +12,7 @@ With this project, I'll be able to enhance my understanding of design and develo
 
 ## Built With
 
-[![My Skills](https://skillicons.dev/icons?i=js,html,sass)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=js,html,sass,css)](https://skillicons.dev)
 
 ## Contact
 
